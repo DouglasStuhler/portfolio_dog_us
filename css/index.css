@@ -1,0 +1,405 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    font-family: "Space Grotesk", sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+#menu{
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;    
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logo{
+    height: 13vh;
+    margin: 1.4vh 0 1vh 0;
+    padding: 0 0 0 2.5vw;
+}
+
+.lista{
+    width: 50vw;
+    margin: 0;
+    padding: 0 1vw 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemLista{
+    list-style: none;
+    width: calc(50vw/4);
+    text-align: center;
+}
+
+.itemLista a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 5.4vh 0 0 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.itemLista:hover{
+    opacity: .7;
+
+}
+
+.grande a{
+    padding: 4vh 0 0 0;
+}
+
+.banner{
+    height: 100vh;
+    width: 100vw;
+    background-color: #02a75e;
+    position: relative;
+}
+
+.vetorPrinci{
+    height: 60vh;
+    position: absolute;
+    left: 3vw;
+    top: 25vh;
+    display: inline-block;
+    z-index: 5;
+}
+
+.txt{
+    width: 38vw;
+    position: absolute;
+    right: 3vw;
+    top: 30vh;
+    text-align: center;
+    z-index: 3;
+}
+
+.title{
+    font-size: 3em;
+    letter-spacing: .1em;
+    color: white;
+    text-shadow: -4px 4px rgba(11, 95, 93, 0.500);
+}
+
+.btn{
+    font-size: 1.6em;
+    color: black;
+    display: inline-block;
+    padding: 3vh 4vw;
+    background-color: white;
+    border-radius: .5em;
+    font-weight: 500;
+    letter-spacing: .05em;
+    box-shadow: -1vh 1vh .6vh rgba(11, 95, 93, 0.500);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.btn:hover{
+    box-shadow: none;
+    color: black;
+}
+
+#quem{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #02a75e;
+    position: relative;
+}
+
+.circulo{
+    height: 160vh;
+    width: 160vh;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: -35vh;
+    left: -20vw;
+}
+
+.esquerda{
+    left: 5vw;
+    top: 25vh;
+}
+
+.direita{
+    right: 6vw;
+    top: 25vh;
+}
+
+.titlepara{
+    font-size: 2.2em;
+    letter-spacing: .05em;
+    color: #02a75e;
+    font-weight: bold;
+}
+
+.paragrafo{
+    font-size: 1.2em;
+    letter-spacing: .03em;
+    line-height: 1.3em;
+    color: black;
+    text-align: justify;
+}
+
+.negrito{
+    font-weight: 500;
+}
+
+.imgQuem{
+    position: absolute;
+    top: 25vh;
+    right: 5vw;
+    width: 45vw;
+    z-index: 3;
+}
+
+#porque{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #02a75e;
+    position: relative;
+}
+
+.imgPA{
+    position: absolute;
+    top: 25vh;
+    left: 5vw;
+    z-index: 3;
+}
+
+.branco{
+    color: white;
+}
+
+#ajude{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #232323;
+    position: relative;
+}
+
+.contato{
+    width: 38vw;
+    position: absolute;
+    right: 3vw;
+    top: 20vh;
+    text-align: center;
+}
+
+.verde{
+    color: #02a75e;
+}
+
+.formulario{
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 2vw;
+}
+
+.label{
+    display: inline-block;
+    font-size: 1.3em;
+    letter-spacing: .04em;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #02a75d;
+    padding: .8vh .7vw 1vh;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid #02a75e;
+}
+
+.input{
+    display: block;
+    font-size: 1.3em;
+    padding: 1.1vh .5vw .9vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -.9vh;
+    margin-bottom: 2.5vh;
+    letter-spacing: .04em;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: #232323;
+    z-index: 2;
+}
+
+.input:focus{
+    border: 2px solid #02a75e;
+    outline: none;
+}
+
+
+.btnpeq{
+    font-size: 1.2em;
+    color: black;
+    display: inline-block;
+    padding: 1.5vh 2vw;
+    background-color: white;
+    border-radius: .5em;
+    font-weight: 500;
+    letter-spacing: .05em;
+    border: 2px solid transparent;
+    margin-left: 14vw;
+    margin-top: 1.5vh;
+}
+
+.btnpeq:hover{
+    color: white;
+    background-color: #02a75e;
+}
+
+#rodape{
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #232323;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: .03em;
+    line-height: 1em;
+    color: white;
+    padding: 2vh 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .logo{
+        margin: 1.4vh 25vw 1vh;
+    }
+    .lista{
+        display: none;
+    }
+
+    .vetorPrinci{
+        width: 90vw;
+        height: auto;
+        left: 5vw;
+    }
+
+    .txt{
+        width: 90vw;
+        top: 50vh;
+        right: 5vw;
+    }
+
+    .title{
+        font-size: 2.8em;
+    }
+
+    .btn{
+        box-shadow: none;
+        color: black;
+    }
+
+    .circulo{
+        display: none;
+    }
+
+    #quem{
+        background-color: white;
+        height: 115vh;
+    }
+
+    .imgQuem{
+        height: auto;
+        width: 90vw;
+        top: 35vw;
+        left: 5vw;
+    }
+
+    .titlepara{
+        font-size: 2em;
+        margin-bottom: 1vh;
+    }
+
+    .esquerda{
+        top: 52vh;
+        left: 5vw;
+    }
+
+    .paragrafo{
+        font-size: 1.1em;
+        letter-spacing: .03em;
+        line-height: 1.2em;
+    }
+
+    #porque{
+        height: 126vh;
+    }
+
+    .imgPA{
+        height: auto;
+        width: 90vw;
+        top: 16vh;
+    }
+
+    .direita{
+        top: 57vh;
+    }
+
+    #ajude{
+        height: 120vh;
+    }
+
+    .contato{
+        width: 90vw;
+    }
+
+    #ajude .esquerda{
+        width: 90vw;
+        top: 18vh;
+    }
+
+    .btnpeq{
+        margin-left: 30vw;
+        padding: 1.5vh 6vw;
+    }
+
+    #ajude .direita{
+        width: 90vw;
+        top: 85vh;
+    }
+
+    #ajude .paragrafo{
+        text-align: center;
+        padding: 0;
+        margin: 2vh 0;
+    }
+
+    .mobiletel{
+        display: block;
+    }
+
+    /* ajustes de tamanho para uma maior abragência quanto a responisvidade */
+
+    .banner{
+        height: 105vh;
+    }
+  }
