@@ -12,3 +12,5 @@ Olá, Bem vindos ao meu primeiro projeto Web!
 > Esse projeto foi desenvolvido apenas com HTML e CSS, com o principal intuito de praticar as tecnologias usadas. 
 
 > Todas as imagens usadas foram retiradas da internet, tendo eu feito apenas pequenas alterações, como retirada do fundo branco, ou alterações nas cores.
+
+> Este projeto possui responsividade para Desktop e para Celulares, porém, não possui responsividade para tablets.
